@@ -64,6 +64,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .button-primary { background: var(--warm); color: #2d2015; }
 .button-ghost { border-color: rgba(255,255,255,.5); color: var(--white); background: rgba(255,255,255,.05); }
 .button-ghost:hover { background: rgba(255,255,255,.14); }
+.button-campus { border-color: rgba(126,221,232,.58); color: #e4fbfd; background: rgba(77,183,200,.14); }
+.button-campus:hover { background: rgba(77,183,200,.28); }
 .hero-status { display: inline-flex; align-items: center; gap: 8px; margin: 22px 0 0; color: #bcd0e2; font-size: 14px; }
 .status-dot { width: 9px; height: 9px; display: inline-block; border-radius: 50%; background: var(--warm); box-shadow: 0 0 0 5px rgba(242,180,107,.15); }
 .event-card { padding: 30px; background: rgba(255,255,255,.97); color: var(--ink); border: 1px solid rgba(255,255,255,.5); border-radius: var(--radius-lg); box-shadow: 0 28px 50px rgba(0,0,0,.16); }
