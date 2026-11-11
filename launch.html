@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HYCU 부동산대학원 실행 페이지</title>
+  <style>
+    :root { color-scheme: dark; --navy: #123a62; --deep: #071c33; --sky: #8ce1ed; --warm: #f2b46b; --white: #f8fbff; --muted: #b8c9d8; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-width: 320px; min-height: 100vh; font-family: "Noto Sans KR", Pretendard, Arial, sans-serif; color: var(--white); background: radial-gradient(circle at 82% 12%, rgba(140,225,237,.2), transparent 28%), linear-gradient(135deg, var(--deep), var(--navy)); }
+    main { width: min(980px, calc(100% - 36px)); margin: 0 auto; padding: 30px 0 44px; }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 10px 0 54px; }
+    .brand { display: flex; align-items: center; gap: 12px; color: var(--white); text-decoration: none; font-weight: 850; }
+    .mark { display: grid; place-items: center; width: 48px; height: 48px; border: 1px solid rgba(140,225,237,.55); border-radius: 50%; color: var(--sky); font-size: 14px; letter-spacing: .05em; }
+    .brand small { display: block; margin-top: 4px; color: var(--sky); font-size: 10px; letter-spacing: .18em; }
+    .eyebrow { color: var(--sky); font-size: 11px; letter-spacing: .18em; font-weight: 800; }
+    h1 { max-width: 700px; margin: 14px 0 18px; font-size: clamp(34px, 7vw, 68px); line-height: 1.1; letter-spacing: -.06em; }
+    .intro { max-width: 650px; margin: 0; color: var(--muted); font-size: 17px; line-height: 1.8; }
+    .launch-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 42px; }
+    .launch-card { display: flex; flex-direction: column; min-height: 260px; padding: 28px; border: 1px solid rgba(255,255,255,.18); border-radius: 24px; background: rgba(255,255,255,.08); box-shadow: 0 20px 50px rgba(0,0,0,.2); }
+    .launch-card.campus { border-color: rgba(140,225,237,.5); background: linear-gradient(145deg, rgba(24,103,132,.45), rgba(255,255,255,.07)); }
+    .step { color: var(--warm); font-size: 12px; font-weight: 900; letter-spacing: .12em; }
+    h2 { margin: 16px 0 10px; font-size: 25px; }
+    .launch-card p { margin: 0; color: var(--muted); line-height: 1.7; }
+    .launch-button { display: inline-flex; align-items: center; justify-content: space-between; gap: 14px; margin-top: auto; padding: 14px 16px; border-radius: 999px; background: var(--warm); color: #2d2015; font-weight: 900; text-decoration: none; }
+    .launch-card.campus .launch-button { background: var(--sky); color: #063147; }
+    .launch-button:hover { filter: brightness(1.08); transform: translateY(-2px); }
+    .flow { margin-top: 22px; padding: 17px 20px; border-left: 3px solid var(--warm); border-radius: 12px; background: rgba(255,255,255,.08); color: #dbe8f2; line-height: 1.7; }
+    .flow strong { color: var(--warm); }
+    footer { margin-top: 48px; color: #91a9bb; font-size: 12px; }
+    @media (max-width: 700px) { header { padding-bottom: 38px; } .launch-grid { grid-template-columns: 1fr; } .launch-card { min-height: 220px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <a class="brand" href="./" aria-label="세미나 안내 화면으로 이동"><span class="mark">HYCU</span><span>부동산대학원<small>DOCTORAL RESEARCH CAMPUS</small></span></a>
+      <span class="eyebrow">START HERE</span>
+    </header>
+    <section aria-labelledby="page-title">
+      <span class="eyebrow">HYCU REAL ESTATE GRADUATE SCHOOL</span>
+      <h1 id="page-title">연구와 가상공간을<br />바로 시작하세요.</h1>
+      <p class="intro">세미나 안내 화면과 29개 공간으로 구성된 가상 연구캠퍼스를 한곳에서 실행할 수 있습니다.</p>
+      <div class="launch-grid">
+        <article class="launch-card">
+          <span class="step">01 · SEMINAR</span>
+          <h2>세미나 안내 화면</h2>
+          <p>학습자료, 연구발표, 과제·평가 자료를 확인합니다.</p>
+          <a class="launch-button" href="./">세미나 안내 열기 <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="launch-card campus">
+          <span class="step">02 · CAMPUS</span>
+          <h2>가상 연구캠퍼스</h2>
+          <p>입장 화면을 거치지 않고 3D 연구캠퍼스로 바로 이동합니다.</p>
+          <a class="launch-button" href="https://kshan0823-lab.github.io/hycu-doctoral-metaverse/?view=campus">가상공간 바로 입장 <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+      <div class="flow"><strong>이동 순서</strong> · 세미나 안내 화면의 되돌아가기 화살표를 누르면 가상 연구캠퍼스로 바로 이동하고, 캠퍼스 왼쪽 위의 `학교로 돌아가기`를 누르면 세미나 안내 화면으로 돌아옵니다.</div>
+    </section>
+    <footer>HYCU 부동산대학원 · 실행 전용 안내 화면</footer>
+  </main>
+</body>
+</html>
+
